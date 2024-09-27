@@ -1,18 +1,26 @@
-## Getting Started
+# Classe Author - Enunciado
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Implemente uma classe chamada `Author` para servir de modelo para autores de livros. A classe deve seguir as seguintes especificações:
 
-## Folder Structure
+## Atributos:
+- `name` (String): Nome do autor (não pode ser alterado após a criação).
+- `email` (String): Email do autor.
+- `gender` (char): Gênero do autor. Aceita apenas 'm' (masculino) ou 'f' (feminino). Este valor não pode ser alterado após a criação.
 
-The workspace contains two folders by default, where:
+## Construtor:
+- O construtor deve inicializar os 3 atributos com base nos parâmetros fornecidos:
+  ```java
+  Author(String name, String email, char gender)
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Métodos:
+- `getName()`: Retorna o nome do autor.
+- `getEmail()`: Retorna o email do autor.
+- `setEmail(String email)`: Atualiza o email do autor.
+- `getGender()`: Retorna o gênero do autor.
+- `toString()`: Retorna uma string com o seguinte formato: `Author[name=?,email=?,gender=?]`
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Classe de Teste:
+- Testar o construtor.
+- Verificar o método toString().
+- Testar o setter de email.
+- Testar os getters de name, email e gender.
