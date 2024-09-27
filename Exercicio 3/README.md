@@ -1,18 +1,63 @@
-## Getting Started
+# Exercício 03
+Implemente o sistema representado pelo diagrama abaixo.
+Obrigatório implementar uma classe de testes para todos os métodos das classes Staff e
+Student.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Diagrama de Classes
 
-## Folder Structure
+### Person 
 
-The workspace contains two folders by default, where:
+| **Atributos** | **Tipo** |
+|---------------|----------|
+| - name        | String   |
+| - address     | String   |
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+| **Métodos**                   |
+|-------------------------------|
+| + Person(name: String, address: String) |
+| + getName(): String           |
+| + getAddress(): String        |
+| + setAddress(address: String): void |
+| + toString(): String          |
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+----
 
-## Dependency Management
+### Student (extends Person)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+| **Atributos** | **Tipo** |
+|---------------|----------|
+| - program     | String   |
+| - year        | int      |
+| - fee         | double   |
+
+| **Métodos**                   | 
+|-------------------------------|
+| + Student(name: String, address: String, program: String, year: int, fee: double) |
+| + getProgram(): String        |
+| + setProgram(program: String): void | 
+| + getYear(): int              |  
+| + setYear(year: int): void    |     
+| + getFee(): double            |  
+| + setFee(fee: double): void    |
+| + toString(): String          |
+
+
+---
+
+### Staff (extends Person)
+
+| **Atributos** | **Tipo** |
+|---------------|----------|
+| - school      | String   |
+| - pay         | double   |
+
+| **Métodos**                   |
+|-------------------------------|
+| + Staff(name: String, address: String, school: String, pay: double) |
+| + getSchool(): String        | 
+| + setSchool(school: String): void | 
+| + getPay(): double           |  
+| + setPay(pay: double): void  |
+| + toString(): String         |
+
