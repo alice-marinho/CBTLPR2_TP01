@@ -1,4 +1,4 @@
-# Classe Author - Enunciado
+# Exercício 01
 
 Implemente uma classe chamada `Author` para servir de modelo para autores de livros. A classe deve seguir as seguintes especificações:
 
